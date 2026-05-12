@@ -1,0 +1,34 @@
+---
+description: UI sát Figma (pixel-perfect), HTML/CSS + Bootstrap 5, ảnh và SEO
+alwaysApply: true
+---
+
+# Quy tắc cắt giao diện (tomoeVN)
+
+## Figma — ưu tiên sát design nhất có thể
+
+- Đối chiếu trực tiếp file/spec Figma: **spacing, font-size, line-height, letter-spacing, border-radius, màu (hex/RGB), độ rộng/cao** — không làm tròn tùy ý khác spec.
+- Layout: dùng **CSS phù hợp** (flex/grid) để khớp auto-layout; tránh “chỉnh mắt” lệch vài px so với Inspect.
+- Khi có mâu thuẫn giữa screenshot và số đo Inspect, **ưu tiên số đo / token** từ Figma.
+- Responsive: bám breakpoint design; nếu design chỉ có một khung, giữ **desktop đúng px** rồi suy luận scale/mobile có chủ đích, không phá vỡ tỷ lệ gốc.
+
+## Stack
+
+- **HTML + CSS thuần**, có thể dùng **Bootstrap 5 mới nhất** (CDN: `https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css` và `bootstrap.bundle.min.js`).
+- Chỉ thêm CSS tùy chỉnh khi Bootstrap không đủ để khớp Figma.
+
+## Ảnh
+
+- **Ưu tiên ảnh đã tải/xuất** từ Figma hoặc URL rõ ràng; **không** tạo cấu trúc `assets/` mặc định nếu không bắt buộc — đặt file gọn (ví dụ thư mục `images/` hoặc cùng cấp theo convention repo) và `src` trỏ thẳng.
+- Ảnh mang nội dung: luôn có **`alt` mô tả** phù hợp SEO.
+
+## SEO & HTML semantic
+
+- **Một `h1`** rõ trên trang (hoặc đúng mô hình nội dung); thứ tự heading `h2` → `h3` hợp lý, không nhảy cấp vô lý.
+- Dùng **`header`, `main`, `nav`, `section`, `article`, `footer`** khi đúng ngữ nghĩa; tránh chuỗi `div` bọc không cần thiết.
+- Nội dung quan trọng không chỉ nằm trong ảnh; nút/link có **text hoặc label** (a11y/SEO).
+
+## Kiểm tra trước khi coi là xong
+
+- So lại vài điểm chính (hero, typographic scale, khoảng cách section) với Figma ở **cùng zoom** (thường 100%).
+- Không thêm thẻ/HTML chỉ để “dễ style” nếu có thể gộp hoặc thay bằng semantic tương đương.

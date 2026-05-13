@@ -998,6 +998,9 @@ ul.stats-row {
   margin-right: auto;
   width: 100%;
 }
+.project-card:hover img {
+  transform: scale(1.2);
+}
 
 .project-card__media {
   position: relative;
@@ -1011,6 +1014,7 @@ ul.stats-row {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: all 0.7s;
 }
 
 .project-card__badge {
@@ -3493,7 +3497,6 @@ address.site-footer__col--office {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  height: 100%;
   padding: 24px;
   background: #f8f8f8;
 }

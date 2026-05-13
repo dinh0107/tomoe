@@ -532,6 +532,7 @@ ul.stats-row {
     display: flex;
     gap: 8px;
     flex-direction: column;
+   
 }
 
 .color-blue {
@@ -1084,6 +1085,11 @@ ul.stats-row {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+     &:hover{
+        img{
+                transform: scale(1.2);
+        }
+    }
 }
 
 .project-card__media {
@@ -1097,6 +1103,7 @@ ul.stats-row {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: all .7s;
 }
 
 .project-card__badge {
@@ -3630,7 +3637,6 @@ address.site-footer__col--office {
     display: flex;
     flex-direction: column;
     gap: 24px;
-    height: 100%;
     padding: 24px;
     background: #f8f8f8;
 }

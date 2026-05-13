@@ -2146,30 +2146,40 @@ address.site-footer__col--office {
   }
 }
 /* —— Trang danh sách Khí công nghiệp (Figma 183:1182) —— */
-.page-products {
-  background: #fff;
-}
-
-.page-products .site-header.site-header--surface.navbar {
+.site-header.site-header--surface.navbar {
   background: #fff !important;
   border-bottom: 3px solid #10a6ff;
 }
 
-.page-products .site-header--surface .site-header__nav .nav-link {
-  color: #01224f !important;
+.site-header.site-header--scrollable.site-header--surface {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1030;
 }
 
-.page-products .site-header--surface .site-header__nav .nav-link:hover,
-.page-products .site-header--surface .site-header__nav .nav-link:focus {
+.site-header.site-header--surface .site-header__nav .nav-link {
+  color: #01224f !important;
+  font-weight: 600;
+}
+
+.site-header.site-header--surface .site-header__nav .nav-link:hover,
+.site-header.site-header--surface .site-header__nav .nav-link:focus {
   color: #0252bd !important;
 }
 
-.page-products .site-header--surface .site-header__lang {
+.site-header.site-header--surface .site-header__lang {
   border-color: #d8d8d8;
 }
 
-.page-products .site-header--surface .site-header__lang span {
+.site-header.site-header--surface .site-header__lang span,
+.site-header.site-header--surface .site-header__lang-label {
   color: #262626;
+}
+
+.page-products {
+  background: #fff;
 }
 
 .products-list-hero {

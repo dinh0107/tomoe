@@ -28,6 +28,9 @@
       margin: 30,
       nav: false,
       dots: false,
+      autoplay: true,
+      autoplayTimeout: 3000,
+      autoplayHoverPause: true,
       smartSpeed: 400,
       navText: [prevImg, nextImg],
       responsive: {

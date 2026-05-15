@@ -28,6 +28,9 @@
       margin: 16,
       nav: true,
       dots: false,
+      autoplay: true,
+      autoplayTimeout: 3000,
+      autoplayHoverPause: true,
       smartSpeed: 450,
       navText: [prevIcon, nextIcon],
       responsive: {

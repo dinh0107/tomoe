@@ -35,9 +35,13 @@
 
     $journey.owlCarousel({
       loop: false,
+      rewind: true,
       margin: 74,
       nav: true,
       dots: false,
+      autoplay: true,
+      autoplayTimeout: 3000,
+      autoplayHoverPause: true,
       smartSpeed: 400,
       navText: [prevIcon, nextIcon],
       navContainer: '#aboutJourneyNav',

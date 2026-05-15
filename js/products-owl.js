@@ -24,6 +24,9 @@
         margin: 30,
         nav: true,
         dots: false,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
         smartSpeed: 400,
         navText: [productsPrevIcon, productsNextIcon],
         responsive: {
@@ -67,6 +70,9 @@
         margin: 30,
         nav: true,
         dots: false,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
         smartSpeed: 400,
         navText: [projectsPrevIcon, projectsNextIcon],
         responsive: {
@@ -110,6 +116,9 @@
         margin: 30,
         nav: true,
         dots: false,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
         smartSpeed: 400,
         navText: [newsPrevIcon, newsNextIcon],
         responsive: {
